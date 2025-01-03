@@ -35,4 +35,4 @@ const palindrome = () => {
   textInput.value = "";
 };
 
-checkButton.addEventListener("click", palindrome);
+checkButton.addEventListener("click", palindrome)
