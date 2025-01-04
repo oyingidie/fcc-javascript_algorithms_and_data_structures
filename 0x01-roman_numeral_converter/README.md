@@ -1,8 +1,8 @@
 # Build a Roman Numeral Converter
 _Roman numerals_ are based on seven symbols and can be written using various combinations to represent _Arabic numerals_. For example:
 
-|**Roman numerals**|**Arabic numerals**|
-|:--------------:|:---------------:|
+|Roman numerals|Arabic numerals|
+|::|::|
 M|1000
 CM|900
 D|500
