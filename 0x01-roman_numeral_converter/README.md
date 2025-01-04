@@ -3,7 +3,7 @@ Roman numerals are based on seven symbols and can be written using various combi
 
 |Roman numerals|Arabic numerals|
 |:-------------|--------------:|
-M	1000
+M|1000
 CM	900
 D	500
 CD	400
