@@ -4,7 +4,7 @@ const result = document.getElementById("result");
 
 const validateUserInput = () => {
   if (!textInput.value.trim()) {
-    result.innerHTML = "";
+    result.innerHTML = ``;
     alert("Please input a value.");
     return;
   }
