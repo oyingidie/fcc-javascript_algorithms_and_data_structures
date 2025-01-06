@@ -26,6 +26,9 @@ const reverseTextInput = (str) => {
 };
 
 const isPalindrome = () => {
+  const userInput = textInput.value;
+  const cleanString = getAlphamericText(userInput).join("");
+  const reversedString = reverseTextInput(userInput).join("");
 
   if (cleanString === reversedString) {
     result.innerHTML = `<p>${userInput} is a palindrome.</p>`;
@@ -44,3 +47,4 @@ textInput.addEventListener("keydown", (e) => {
 });
 
 checkButton.addEventListener("click", isPalindrome);
+
