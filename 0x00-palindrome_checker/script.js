@@ -40,6 +40,12 @@ const isPalindrome = () => {
   textInput.value = "";
 };
 
+const resetChecker = (e) => {
+  if (e.target.value) {
+    result.innerHTML = ``;
+  }
+};
+
 textInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     isPalindrome();
@@ -48,3 +54,4 @@ textInput.addEventListener("keydown", (e) => {
 
 checkButton.addEventListener("click", isPalindrome);
 
+textInput.addEventListener("input", resetChecker);
