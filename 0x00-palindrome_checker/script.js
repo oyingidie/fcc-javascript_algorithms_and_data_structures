@@ -46,12 +46,12 @@ const resetChecker = (e) => {
   }
 };
 
+checkButton.addEventListener("click", isPalindrome);
+
 textInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     isPalindrome();
   }
 });
-
-checkButton.addEventListener("click", isPalindrome);
 
 textInput.addEventListener("input", resetChecker);
