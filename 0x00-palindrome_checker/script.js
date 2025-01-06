@@ -2,7 +2,7 @@ const textInput = document.getElementById("text-input");
 const checkButton = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
-const confirmInput = () => {
+const confirmUserInput = () => {
   if (!textInput.value.trim()) {
     result.innerHTML = "";
     alert("Please input a value.");
@@ -20,15 +20,16 @@ const reverseTextInput = (str) => {
 };
 
 const palindrome = () => {
-  confirmInput();
+  let userInput = textInput.value;
+  confirmUserInput();
 
-  const cleanString = getAlphamericText(textInput.value).join("");
-  const reversedString = reverseTextInput(textInput.value).join("");
+  const cleanString = getAlphamericText(userInput).join("");
+  const reversedString = reverseTextInput(userInput).join("");
 
   if (cleanString === reversedString) {
-    result.innerHTML = `<p>${textInput.value} is a palindrome.</p>`;
+    result.innerHTML = `<p>${userInput} is a palindrome.</p>`;
   } else {
-    result.innerHTML = `<p>${textInput.value} is not a palindrome.</p>`;
+    result.innerHTML = `<p>${userInput} is not a palindrome.</p>`;
   }
 
   result.classList.remove("hide");
