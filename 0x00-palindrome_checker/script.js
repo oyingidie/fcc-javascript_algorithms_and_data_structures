@@ -37,3 +37,9 @@ const palindrome = () => {
 };
 
 checkButton.addEventListener("click", palindrome);
+
+textInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    palindrome();
+  }
+});
