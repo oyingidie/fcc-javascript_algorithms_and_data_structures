@@ -45,3 +45,4 @@ const clearResult = (e) => {
 };
 */
 
+checkButton.addEventListener("click", isPalindrome);
