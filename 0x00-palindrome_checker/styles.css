@@ -3,3 +3,7 @@
   letter-spacing: -0.25px;
   word-spacing: -2px;
 }
+
+.hide {
+  display: none;
+}
