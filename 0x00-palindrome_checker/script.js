@@ -23,16 +23,25 @@ const isPalindrome = () => {
       .match(requiredPattern)
       .reverse()
       .join("");
-/*
+
     if (cleanString === reversedString) {
       result.innerHTML = `<p>${userInput} is a palindrome.</p>`;
     } else {
       result.innerHTML = `<p>${userInput} is not a palindrome.</p>`;
     }
-*/
+
     result.classList.remove("hide");
     textInput.value = "";
   } else {
     validateUserInput();
   }
 };
+
+/*
+const clearResult = (e) => {
+  if (e.target.value) {
+    result.classList.add("hide");
+  }
+};
+*/
+
