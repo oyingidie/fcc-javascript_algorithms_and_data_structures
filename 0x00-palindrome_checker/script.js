@@ -46,3 +46,11 @@ const clearResult = (e) => {
 */
 
 checkButton.addEventListener("click", isPalindrome);
+
+textInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    isPalindrome();
+  }
+});
+
+// textInput.addEventListener("input", clearResult);
