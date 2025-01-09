@@ -33,3 +33,31 @@ const convertInput = (num) => {
   return romanNumeral;
 };
 
+const getRomanNumeral = () => {
+  const userInput = parseInt(number.value);
+/*
+  if (!number.value || isNaN(userInput)) {
+    output.innerHTML = `<p>Please enter a valid number</p>`;
+    return;
+  }
+*/
+  if (userInput <= 0) {
+    output.innerHTML = `<p>Please enter a number greater than or equal to 1</p>`;
+  } else if (userInput > 3999) {
+    output.innerHTML = `<p>Please enter a number less than or equal to 3999</p>`;
+  } else {
+    output.innerHTML = `<p>${convertInput(userInput)}</p>`;
+  }
+
+  output.classList.remove("hide");
+};
+
+convertButton.addEventListener("click", getRomanNumeral);
+
+number.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    getRomanNumeral();
+  }
+});
+
+// number.addEventListener("input", resetChecker);
