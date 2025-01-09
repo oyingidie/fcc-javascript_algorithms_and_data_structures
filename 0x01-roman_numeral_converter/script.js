@@ -29,4 +29,7 @@ const convertInput = (num) => {
       romanNumeral += letter;
     }
   }
+
+  return romanNumeral;
 };
+
