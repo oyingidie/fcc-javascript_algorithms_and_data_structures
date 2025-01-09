@@ -21,4 +21,12 @@ const convertInput = (num) => {
     I: 1
   };
 
+  for (const letter in conversionChart) {
+    const chartValue = conversionChart[letter];
+
+    while (num >= chartValue) {
+      num -= chartValue;
+      romanNumeral += letter;
+    }
+  }
 };
