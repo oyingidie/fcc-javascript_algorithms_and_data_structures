@@ -1,4 +1,4 @@
-# fCC-javascript_algorithms_data_structures
+Javascript Algorithms & Data Structures
 A collection of projects completed while learning via [https://www.freecodecamp.org/](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/)
 
 - Palindrome Checker
