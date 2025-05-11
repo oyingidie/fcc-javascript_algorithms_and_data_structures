@@ -1,5 +1,5 @@
 # Build a Palindrome Checker
-:unlock: _Remove all non-alphanumeric characters (punctuation, spaces, and symbols) and turn everything into the same case (lower or upper case) to check for palindromes._
+:unlock: <small>Remove all non-alphanumeric characters (punctuation, spaces, and symbols) and turn everything into the same case (lower or upper case) to check for palindromes.</small>
 
 **Objective:** Build an app that is functionally similar to https://palindrome-checker.freecodecamp.rocks
 
