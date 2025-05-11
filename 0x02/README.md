@@ -1,9 +1,7 @@
 Build a Telephone Number Validator
-
-:bulb: The area code is required. If the country code is also provided, you must confirm that it is 1.
-
 **Objective:** Build an app that is functionally similar to https://telephone-number-validator.freecodecamp.rocks
 
+:bulb: The area code is required. If the country code is also provided, you must confirm that it is 1.
 
 User Stories:
 
