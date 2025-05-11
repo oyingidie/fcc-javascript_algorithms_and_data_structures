@@ -3,7 +3,7 @@
 
 <sub>:bulb: The area code is required. If the country code is also provided, you must confirm that it is 1.</sub>
 
-User Stories:
+**User Stories:**
 
 - You should have an input element with an id of "user-input".
 - You should have a button element with an id of "check-btn".
