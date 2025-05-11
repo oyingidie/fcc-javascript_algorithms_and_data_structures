@@ -1,5 +1,4 @@
 # Build a Palindrome Checker
-
 **Objective:** Build an app that is functionally similar to https://palindrome-checker.freecodecamp.rocks
 
 <sub>:bulb: Remove all non-alphanumeric characters (punctuation, spaces, and symbols) and turn everything into the same case (lower or upper case) to check for palindromes.</sub>
