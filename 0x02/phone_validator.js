@@ -25,6 +25,12 @@ const validateNumber = () => {
   }
 };
 
+userInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    validateNumber();
+  }
+});
+
 checkButton.addEventListener("click", validateNumber);
 
 clearButton.addEventListener("click", () => {
