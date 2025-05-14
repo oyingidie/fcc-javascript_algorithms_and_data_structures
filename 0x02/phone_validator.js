@@ -26,3 +26,7 @@ const validateNumber = () => {
 };
 
 checkButton.addEventListener("click", validateNumber);
+
+clearButton.addEventListener("click", () => {
+  results.innerHTML = "";
+});
