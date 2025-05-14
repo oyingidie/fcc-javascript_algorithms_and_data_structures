@@ -12,4 +12,12 @@ const validateNumber = () => {
     alert("Please provide a phone number");
     return;
   }
+
+  if (isValidLength(phoneNumber) && isValidFormat(phoneNumber)) {
+    results.innerHTML += `<p>Valid US number: ${phoneNumber}</p>`;
+  } else {
+    results.innerHTML += `<p>Invalid US number: ${phoneNumber}</p>`;
+  }
 };
+
+checkButton.addEventListener("click", validateNumber);
