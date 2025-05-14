@@ -5,6 +5,11 @@ const results = document.getElementById("results-div");
 
 const isValidLength = (str) => str.length >= 10 || str.length <= 14;
 
+const isValidFormat = (str) => {
+  const formatRegex = /^(?:1\s?)?(?:\(\d{3}\)|\d{3})[-\s]?\d{3}[-\s]?\d{4}$/;
+  return str.match(formatRegex);
+};
+
 const validateNumber = () => {
   const phoneNumber = userInput.value;
 
