@@ -18,3 +18,5 @@ Your application should show different messages depending on the price of the it
 |Ten Dollars        |         $10 (TEN)|
 |Twenty Dollars     |      $20 (TWENTY)|
 |One Hundred Dollars|$100 (ONE HUNDRED)|
+
+**Objective:** Build an app that is functionally similar to https://cash-register.freecodecamp.rocks
