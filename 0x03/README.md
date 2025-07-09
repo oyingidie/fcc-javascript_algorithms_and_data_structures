@@ -7,7 +7,7 @@ Your application should show different messages depending on the price of the it
 - `"Status: CLOSED"`: if `cash-in-drawer` is equal to the change due.
 - `"Status: OPEN"`: if `cash-in-drawer` is greater than the change due and you can return change, with the change due in coins and bills sorted in highest to lowest order.
 
-Currency Unit	Amount
+|Currency Unit|Amount|
 Penny	$0.01 (PENNY)
 Nickel	$0.05 (NICKEL)
 Dime	$0.1 (DIME)
