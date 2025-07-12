@@ -21,6 +21,8 @@ Here you'll build a cash register app that will return change to the customer ba
 |Twenty Dollars     |      $20 (TWENTY)|
 |One Hundred Dollars|$100 (ONE HUNDRED)|
 
+<br />
+
 **Objective:** Build an app that is functionally similar to https://cash-register.freecodecamp.rocks
 
 **User Stories:**
