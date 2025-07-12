@@ -26,7 +26,7 @@ Here you'll build a cash register app that will return change to the customer ba
 **User Stories:**
 
 - You should have an `input` element with an `id` of `"cash"`
-- You should have a div, span or p element with an id of "change-due"
+- You should have a `div`, `span` or `p` element with an `id` of "change-due"
 - You should have a button element with an id of "purchase-btn"
 - When the value in the #cash element is less than price, an alert should appear with the text "Customer does not have enough money to purchase the item"
 - When the value in the #cash element is equal to price, the value in the #change-due element should be "No change due - customer paid with exact cash"
