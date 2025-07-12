@@ -7,8 +7,6 @@ Here you'll build a cash register app that will return change to the customer ba
 - <sub>`"Status: CLOSED"`: if `cash-in-drawer` is equal to the change due.
 - <sub>`"Status: OPEN"`: if `cash-in-drawer` is greater than the change due and you can return change, with the change due in coins and bills sorted in highest to lowest order.</sub>
 
-<br />
-
 |Currency Unit      |            Amount|
 |:-----------------:|:----------------:|
 |Penny              |     $0.01 (PENNY)|
@@ -20,8 +18,6 @@ Here you'll build a cash register app that will return change to the customer ba
 |Ten Dollars        |         $10 (TEN)|
 |Twenty Dollars     |      $20 (TWENTY)|
 |One Hundred Dollars|$100 (ONE HUNDRED)|
-
-<br />
 
 **Objective:** Build an app that is functionally similar to https://cash-register.freecodecamp.rocks
 
