@@ -7,6 +7,8 @@ Here you'll build a cash register app that will return change to the customer ba
 - <sub>`"Status: CLOSED"`: if `cash-in-drawer` is equal to the change due.
 - <sub>`"Status: OPEN"`: if `cash-in-drawer` is greater than the change due and you can return change, with the change due in coins and bills sorted in highest to lowest order.</sub>
 
+<br />
+
 |Currency Unit      |            Amount|
 |:-----------------:|:----------------:|
 |Penny              |     $0.01 (PENNY)|
