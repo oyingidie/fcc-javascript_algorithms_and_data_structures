@@ -28,4 +28,15 @@ const confirmPurchase = () => {
 
   let totalCashInDrawer = cid.reduce((acc, [, amount]) => acc + amount, 0);
   totalCashInDrawer = parseFloat(totalCashInDrawer.toFixed(2));
+
+  if (cashReceived < price) {
+    alert("Customer does not have enough money to purchase the item");
+  } else if (cashReceived === price) {
+    confirmChangeDialog.showModal();
+    change.textContent = "No change due - customer paid with exact cash";
+  } else if (totalCashInDrawer < changeDue) {
+    confirmChangeDialog.showModal();
+    change.textContent = "Status: INSUFFICIENT_FUNDS";
+  } else {
+  }
 };
