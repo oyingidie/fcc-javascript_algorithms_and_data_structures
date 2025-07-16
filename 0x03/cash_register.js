@@ -21,3 +21,11 @@ let cid = [
 
 priceDisplay.textContent = `$${price.toFixed(2)}`;
 //updateDrawerDisplay();
+
+const confirmPurchase = () => {
+  const cashReceived = parseFloat(cashInput.value);
+  const changeDue = parseFloat((cashReceived - price).toFixed(2));
+
+  let totalCashInDrawer = cid.reduce((acc, [, amount]) => acc + amount, 0);
+  totalCashInDrawer = parseFloat(totalCashInDrawer.toFixed(2));
+};
