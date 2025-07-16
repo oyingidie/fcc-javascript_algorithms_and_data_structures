@@ -18,3 +18,6 @@ let cid = [
   ["TWENTY", 60],
   ["ONE HUNDRED", 100]
 ];
+
+priceDisplay.textContent = `$${price.toFixed(2)}`;
+//updateDrawerDisplay();
