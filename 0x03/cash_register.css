@@ -3,3 +3,15 @@
   letter-spacing: -0.25px;
   word-spacing: -2px;
 }
+
+#confirm-change-dialog {
+  padding: 8em;
+  margin: 10px auto;
+  border-radius: 15px;
+}
+
+.change-display {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
