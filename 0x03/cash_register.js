@@ -38,5 +38,6 @@ const confirmPurchase = () => {
     confirmChangeDialog.showModal();
     change.textContent = "Status: INSUFFICIENT_FUNDS";
   } else {
+    
   }
 };
