@@ -38,6 +38,22 @@ const confirmPurchase = () => {
     confirmChangeDialog.showModal();
     change.textContent = "Status: INSUFFICIENT_FUNDS";
   } else {
-    
+    const drawer = returnChange(changeDue, cid);
+
+    if (drawer === null) {
+      change.textContent = "Status: INSUFFICIENT_FUNDS";
+    } else if (drawer.totalChange === changeDue && drawer.remainingCash === 0) {
+      change.textContent = `Status: CLOSED ${displayChange(
+        drawer.returnedChange
+      )}`;
+      cid = cid.map(([unit]) => [unit, 0]);
+      //updateDrawerDisplay();
+    } else {
+      change.textContent = `Status: OPEN ${displayChange(
+        drawer.returnedChange
+      )}`;
+      cid = drawer.availableCash;
+      //updateDrawerDisplay();
+    }
   }
 };
