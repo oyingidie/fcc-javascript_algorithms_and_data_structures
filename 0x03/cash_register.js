@@ -40,6 +40,33 @@ const returnChange = (changeDue, cid) => {
     ["NICKEL", 0.05],
     ["PENNY", 0.01]
   ];
+  
+
+  for (let i = 0; i < currencyUnits.length; i++) {
+    const [unitName, unitValue] = currencyUnits[i];
+    let amountInDrawer = currentCashInDrawer.find(
+      (item) => item[0] === unitName
+    )[1];
+    let amountToTake = 0;
+
+    while (remainingChange >= unitValue && amountInDrawer > 0) {
+      remainingChange = parseFloat((remainingChange - unitValue).toFixed(2));
+      amountInDrawer = parseFloat((amountInDrawer - unitValue).toFixed(2));
+      amountToTake = parseFloat((amountToTake + unitValue).toFixed(2));
+    }
+
+    if (amountToTake > 0) {
+      changeReturned.push([unitName, amountToTake]);
+
+      const cidIndex = currentCashInDrawer.findIndex(
+        (item) => item[0] === unitName
+      );
+      if (cidIndex !== -1) {
+        currentCashInDrawer[cidIndex][1] = amountInDrawer;
+      }
+    }
+  }
+
 };
 
 
