@@ -22,6 +22,16 @@ let cid = [
 priceDisplay.textContent = `$${price.toFixed(2)}`;
 //updateDrawerDisplay();
 
+
+//calculate change to be returned
+const returnChange = (changeDue, cid) => {
+  const changeReturned = [];
+  let remainingChange = changeDue;
+  let currentCashInDrawer = JSON.parse(JSON.stringify(cid));
+
+};
+
+
 const confirmPurchase = () => {
   const cashReceived = parseFloat(cashInput.value);
   const changeDue = parseFloat((cashReceived - price).toFixed(2));
