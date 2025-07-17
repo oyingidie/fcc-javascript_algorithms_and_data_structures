@@ -22,7 +22,7 @@ let cid = [
 priceDisplay.textContent = `$${price.toFixed(2)}`;
 //updateDrawerDisplay();
 
-//calculate change to be returned
+// calculate change to be returned
 const returnChange = (changeDue, cid) => {
   const changeReturned = [];
   let remainingChange = changeDue;
@@ -39,7 +39,7 @@ const returnChange = (changeDue, cid) => {
     ["NICKEL", 0.05],
     ["PENNY", 0.01]
   ];
-  
+
   for (let i = 0; i < currencyUnits.length; i++) {
     const [unitName, unitValue] = currencyUnits[i];
     let amountInDrawer = currentCashInDrawer.find(
@@ -85,6 +85,14 @@ const returnChange = (changeDue, cid) => {
   };
 };
 
+//format change into a string
+const displayChange = (array) => {
+  return array
+    .map(([unit, amount]) => `${unit}: $${amount.toFixed(2)}`)
+    .join(" ");
+};
+
+// confirm transaction validity for processing
 const confirmPurchase = () => {
   const cashReceived = parseFloat(cashInput.value);
   const changeDue = parseFloat((cashReceived - price).toFixed(2));
