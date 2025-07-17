@@ -85,7 +85,6 @@ const returnChange = (changeDue, cid) => {
   };
 };
 
-
 const confirmPurchase = () => {
   const cashReceived = parseFloat(cashInput.value);
   const changeDue = parseFloat((cashReceived - price).toFixed(2));
