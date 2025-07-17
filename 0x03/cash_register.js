@@ -57,3 +57,7 @@ const confirmPurchase = () => {
     }
   }
 };
+
+purchaseBtn.addEventListener("click", () => {
+  confirmPurchase();
+});
