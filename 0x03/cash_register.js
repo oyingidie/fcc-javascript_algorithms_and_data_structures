@@ -65,6 +65,24 @@ const returnChange = (changeDue, cid) => {
     }
   }
 
+  if (remainingChange > 0) {
+    return null;
+  }
+
+  const totalChangeReturned = changeReturned.reduce(
+    (acc, [, amount]) => acc + amount,
+    0
+  );
+
+  return {
+    returnedChange: changeReturned,
+    totalChange: parseFloat(totalChangeReturned.toFixed(2)),
+    availableCash: currentCashInDrawer,
+    remainingCash: currentCashInDrawer.reduce(
+      (acc, [, amount]) => acc + amount,
+      0
+    )
+  };
 };
 
 
