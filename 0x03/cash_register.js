@@ -22,7 +22,6 @@ let cid = [
 priceDisplay.textContent = `$${price.toFixed(2)}`;
 //updateDrawerDisplay();
 
-
 //calculate change to be returned
 const returnChange = (changeDue, cid) => {
   const changeReturned = [];
@@ -41,7 +40,6 @@ const returnChange = (changeDue, cid) => {
     ["PENNY", 0.01]
   ];
   
-
   for (let i = 0; i < currencyUnits.length; i++) {
     const [unitName, unitValue] = currencyUnits[i];
     let amountInDrawer = currentCashInDrawer.find(
