@@ -15,10 +15,10 @@ In this project, you'll build an app that will search for creatures from an RPG 
 - You should have an element with an `id` of `"types"`.
 - You should have an element with an `id` of `"hp"`.
 - You should have an element with an `id` of `"attack"`.
-- You should have an element with an id of "defense".
-- You should have an element with an id of "special-attack".
-- You should have an element with an id of "special-defense".
-- You should have an element with an id of "speed".
+- You should have an element with an `id` of `"defense"`.
+- You should have an element with an `id` of `"special-attack"`.
+- You should have an element with an `id` of "special-defense".
+- You should have an element with an `id` of "speed".
 - When the #search-input element contains the value Red and the #search-button element is clicked, an alert should appear with the text "Creature not found".
 - When the #search-input element contains the value Pyrolynx and the #search-button element is clicked, the values in the #creature-name, #creature-id, #weight, #height, #hp, #attack, #defense, #special-attack, #special-defense, and #speed elements should be PYROLYNX, #1 or 1, Weight: 42 or 42, Height: 32 or 32, 65, 80, 50, 90, 55, and 100, respectively.
 - When the #search-input element contains the value Pyrolynx and the #search-button element is clicked, a single element should be added within the #types element that contains the text FIRE. The #types element content should be cleared between searches.
