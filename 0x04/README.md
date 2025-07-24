@@ -4,9 +4,9 @@ In this project, you'll build an app that will search for creatures from an RPG 
 
 Note: The first 13 steps must be completed inside the index.html file.
 
-Objective: Build an app that is functionally similar to https://rpg-creature-search-app.freecodecamp.rocks.
+**Objective:** Build an app that is functionally similar to https://rpg-creature-search-app.freecodecamp.rocks.
 
-User Stories:
+**User Stories:**
 
 You should have an input element with an id of "search-input", and is required.
 You should have a button element with an id of "search-button".
