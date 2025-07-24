@@ -1,6 +1,6 @@
 ## Build an RPG Creature Search App
 
-In this project, you'll build an app that will search for creatures from an RPG game by name or ID and display the results to the user. To retrieve the creature data and images, you'll use freeCodeCamp's [RPG Creature API][https://rpg-creature-api.freecodecamp.rocks/].
+In this project, you'll build an app that will search for creatures from an RPG game by name or ID and display the results to the user. To retrieve the creature data and images, you'll use freeCodeCamp's [RPG Creature API](https://rpg-creature-api.freecodecamp.rocks/).
 
 **Objective:** Build an app that is functionally similar to https://rpg-creature-search-app.freecodecamp.rocks
 
