@@ -26,4 +26,4 @@ When the #search-input element contains the value 2 and the #search-button eleme
 When the #search-input element contains the value 2 and the #search-button element is clicked, two elements should be added within the #types element that contain text values WATER and ROCK, respectively. The #types element content should be cleared between searches.
 When the #search-input element contains an invalid creature name, and the #search-button element is clicked, an alert should appear with the text "Creature not found".
 When the #search-input element contains a valid creature ID and the #search-button element is clicked, the UI should be filled with the correct data.
-Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+Happy Coding!
