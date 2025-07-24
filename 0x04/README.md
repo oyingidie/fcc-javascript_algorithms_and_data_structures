@@ -12,8 +12,8 @@ In this project, you'll build an app that will search for creatures from an RPG 
 - You should have an element with an `id` of `"creature-id"`.
 - You should have an element with an `id` of `"weight"`.
 - You should have an element with an `id` of `"height"`.
-- You should have an element with an `id` of "types".
-- You should have an element with an id of "hp".
+- You should have an element with an `id` of `"types"`.
+- You should have an element with an `id` of `"hp"`.
 - You should have an element with an id of "attack".
 - You should have an element with an id of "defense".
 - You should have an element with an id of "special-attack".
