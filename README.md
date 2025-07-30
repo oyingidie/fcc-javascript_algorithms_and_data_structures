@@ -5,4 +5,4 @@ A collection of projects completed while learning via [freeCodeCamp](https://www
 - Roman Numeral Converter
 - Telephone Number Validator
 - Cash Register
-- Pokémon Search App
+- RPG Creature (Pokémon) Search App
