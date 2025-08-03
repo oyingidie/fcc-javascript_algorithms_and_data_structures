@@ -14,6 +14,7 @@ const speedElement = document.getElementById("speed");
 
 const apiEndpoint = "https://rpg-creature-api.freecodecamp.rocks/api/creature/";
 
+
 const runSearch = () => {
   const searchParameter = searchInput.value.trim();
 
