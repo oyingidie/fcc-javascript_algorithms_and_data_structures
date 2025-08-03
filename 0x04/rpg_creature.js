@@ -14,6 +14,19 @@ const speedElement = document.getElementById("speed");
 
 const apiEndpoint = "https://rpg-creature-api.freecodecamp.rocks/api/creature/";
 
+const clearDisplay = () => {
+  creatureNameElement.textContent = "";
+  creatureIdElement.textContent = "";
+  weightElement.textContent = "";
+  heightElement.textContent = "";
+  typesElement.innerHTML = "";
+  hpElement.textContent = "";
+  attackElement.textContent = "";
+  defenseElement.textContent = "";
+  specialAttackElement.textContent = "";
+  specialDefenseElement.textContent = "";
+  speedElement.textContent = "";
+};
 
 const runSearch = () => {
   const searchParameter = searchInput.value.trim();
