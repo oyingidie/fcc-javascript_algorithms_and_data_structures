@@ -12,3 +12,5 @@ const specialAttackElement = document.getElementById("special-attack");
 const specialDefenseElement = document.getElementById("special-defense");
 const speedElement = document.getElementById("speed");
 
+const apiEndpoint = "https://rpg-creature-api.freecodecamp.rocks/api/creature/";
+
