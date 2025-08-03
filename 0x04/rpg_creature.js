@@ -28,6 +28,51 @@ const clearDisplay = () => {
   speedElement.textContent = "";
 };
 
+const displayCreatureInfo = (data) => {
+  clearDisplay();
+
+  creatureNameElement.textContent = data.name;
+  creatureIdElement.textContent = data.id;
+  weightElement.textContent = data.weight;
+  heightElement.textContent = data.height;
+
+  if (data.types && data.types.length > 0) {
+    data.types.forEach((typeInfo) => {
+      const typeSpan = document.createElement("span");
+      typeSpan.textContent = typeInfo.name;
+      typesElement.appendChild(typeSpan);
+    });
+  }
+
+  const getCreatureStat = (statName) => {
+    const statObj = data.stats.find((stat) => stat.name === statName);
+    return statObj ? statObj.base_stat : "N/A";
+  };
+
+  hpElement.textContent = getCreatureStat("hp");
+  attackElement.textContent = getCreatureStat("attack");
+  defenseElement.textContent = getCreatureStat("defense");
+  specialAttackElement.textContent = getCreatureStat("special-attack");
+  specialDefenseElement.textContent = getCreatureStat("special-defense");
+  speedElement.textContent = getCreatureStat("speed");
+};
+
+const fetchCreatureData = async (parameter) => {
+  const formattedParameter = parameter.toLowerCase();
+
+  clearDisplay();
+
+  try {
+    const response = await fetch(`${apiEndpoint}${formattedParameter}`);
+    const data = await response.json();
+    displayCreatureInfo(data);
+  } catch (error) {
+    console.error("Error fetching information about creature:", error);
+    alert("Creature not found");
+  }
+};
+
+
 const runSearch = () => {
   const searchParameter = searchInput.value.trim();
 
