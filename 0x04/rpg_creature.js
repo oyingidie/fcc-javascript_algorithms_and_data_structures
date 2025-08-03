@@ -72,7 +72,6 @@ const fetchCreatureData = async (parameter) => {
   }
 };
 
-
 const runSearch = () => {
   const searchParameter = searchInput.value.trim();
 
